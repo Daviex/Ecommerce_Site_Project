@@ -1,0 +1,139 @@
+#cartPage {
+    font-size: 20px;
+    color: #111111;
+}
+
+#cartPage > .title {
+    float: left;
+    font-size: 50px;
+    padding-bottom: 20px;
+}
+
+#cartPage > .back {
+    float: right;
+    margin-top: 10px;
+}
+
+#cartPage > .back > .backButtonStyle {
+    font-size: 20px;
+    padding: 10px;
+    font-weight: bolder;
+    border-radius: 10px;
+}
+
+#cartPage > .cartInfo > .roundedBox {
+    border: 2px solid #BCBCBC;
+    border-radius: 20px;
+    padding-top: 1%;
+    padding-left: 2%;
+    padding-bottom: 1.2%;
+    background-color: #ECECEC;
+    margin-bottom: 10px;
+}
+
+#cartPage > .cartInfo > .roundedBox > .links {
+    font-size: 30px;
+}
+
+#cartPage > .cartInfo > .roundedBox > .links > a {
+    color: black;
+    text-decoration: none;
+    padding-left: 30px;
+}
+
+#cartPage > .cartInfo > .roundedBox > .links > a:hover {
+    text-decoration: none;
+    color: #FF9900;
+    cursor: pointer;
+}
+
+#cartPage > .cartInfo > .roundedBox > .links > button {
+    float: right;
+    font-size: 15px;
+    margin-right: 2%;
+}
+
+#cartPage > .cartInfo > .roundedBox > .tableElements {
+    float: left;
+}
+#cartPage > .cartInfo > .roundedBox > .tableElements.image {
+    padding-top: 15px;
+    padding-right: 10%;
+}
+
+#cartPage > .cartInfo > .roundedBox > .tableElements.infoProduct {
+    line-height: 250%;
+    padding-right: 10%;
+}
+
+#cartPage > .cartInfo > .roundedBox > .tableElements.Quantity {
+    line-height: 250%;
+    padding-right: 6%;
+}
+
+#cartPage > .cartInfo > .roundedBox > .tableElements.Quantity > input[type="number"] {
+    font-size: 20px;
+    width: 50px;
+    height: 40px;
+    margin-left: 14px;
+    padding-right: 6%;
+}
+#cartPage > .cartInfo > .roundedBox > .tableElements.Quantity > span{
+    line-height: 100%;
+}
+
+
+#cartPage > .cartInfo > .roundedBox > .tableElements.price {
+    line-height: 250%;
+    padding-right: 10%;
+ }
+
+#cartPage > .cartInfo > .roundedBox > .tableElements.discount {
+    line-height: 250%;
+}
+
+#cartPage > .checkoutInfo {
+    float: right;
+}
+
+#cartPage > .checkoutInfo > .total {
+    float: right;
+    padding-top: 5px;
+    padding-right: 20px;
+
+}
+
+#cartPage > .checkoutInfo > .saving {
+    float: right;
+    padding-top: 5px;
+    padding-right: 20px;
+    color: red;
+
+}
+
+#cartPage > .checkoutInfo > .checkout {
+    float: right;
+
+}
+
+#cartPage > .checkoutInfo > .checkout > button {
+    border-radius: 20px;
+    font-size: 20px;
+    font-weight: bolder;
+    color: black;
+    padding: 5px 7px 5px 7px;
+    background-color: #FF9900;
+    border: 1px solid #424242;
+    width: 200px;
+}
+
+#cartPage >  .checkoutInfo > .checkout > button:active {
+     border-radius: 20px;
+     font-size: 20px;
+     font-weight: bolder;
+     color: black;
+     padding: 5px 7px 5px 7px;
+     background-color: #975700;
+     border: 1px solid #424242;
+     width: 200px;
+}

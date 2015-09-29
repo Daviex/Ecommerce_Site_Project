@@ -1,0 +1,92 @@
+/* MY PROFILE PAGE */
+#myprofilePage {
+    font-size: 20px;
+    color: #111111;
+}
+
+#myprofilePage > .roundedBox {
+    border: 2px solid #BCBCBC;
+    border-radius: 20px;
+    padding-left: 2%;
+    padding-bottom: 1.2%;
+    background-color: #ECECEC;
+    margin-bottom: 10px;
+}
+
+#myprofilePage > .roundedBox > h2 {
+    font-size: 30px;
+    font-weight: bold;
+    margin-top: 8px;
+    margin-bottom: 0px;
+}
+
+#myprofilePage > .roundedBox > .links {
+    font-weight: 400;
+    padding-left: 6%;
+}
+
+#myprofilePage > .roundedBox > .links > a {
+    color: black;
+    text-decoration: none;
+    border: 4px;
+    border-style: solid;
+    border-color: transparent;
+}
+
+#myprofilePage > .roundedBox > .links > a:active {
+     color: black;
+     text-decoration: none;
+     border: 4px;
+     border-style: solid;
+     border-color: transparent;
+ }
+
+#myprofilePage > .roundedBox > .links > a:hover {
+    text-decoration: none;
+    color: #E9E9E9;
+    margin: 0;
+    border: 4px;
+    border-style: solid;
+    border-color:  transparent;
+    background-color: #424242;
+    cursor: pointer;
+}
+
+#myprofilePage > .roundedBox > .links.h2 {
+    font-size: 30px;
+    font-weight: bold;
+    margin-top: 8px;
+    margin-bottom: 0px;
+    padding-top: 3px;
+    padding-bottom: 2px;
+    padding-left: 0;
+
+}
+
+#myprofilePage > .roundedBox > .links.h2 > a {
+    color: black;
+    text-decoration: none;
+    border: 4px;
+    border-style: solid;
+    border-color: transparent;
+}
+
+#myprofilePage > .roundedBox > .links.h2 > a:active {
+     color: black;
+     text-decoration: none;
+     border: 4px;
+     border-style: solid;
+     border-color: transparent;
+ }
+
+#myprofilePage > .roundedBox > .links.h2 > a:hover {
+    text-decoration: none;
+    color: #E9E9E9;
+    margin: 0;
+    border: 4px;
+    border-style: solid;
+    border-color:  transparent;
+    background-color: #424242;
+    cursor: pointer;
+}
+/* END MY PROFILE*/

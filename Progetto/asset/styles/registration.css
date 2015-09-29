@@ -1,0 +1,24 @@
+/* REGISTRATION PAGE */
+
+#registrationForm {
+    text-align: left;
+    line-height: 10px;
+}
+
+#registrationForm > .h3Registration {
+    font-size: 20px;
+    color: #111111;
+}
+
+#registrationForm > table {
+    display: inline-block;
+}
+
+#registrationForm > table > td {
+}
+
+#registrationForm > .registration {
+    line-height: 40px;
+}
+
+/* END REGISTRATION */

@@ -1,0 +1,63 @@
+#categoryPage {
+
+}
+
+#categoryPage > .title {
+    float: left;
+    font-size: 50px;
+    padding-bottom: 5px;
+}
+
+#categoryPage > select.filter {
+    float: right;
+    margin-top: 15px;
+    font-size: 20px;
+}
+
+#categoryPage > .description {
+    float: left;
+    font-size: 25px;
+    font-weight: normal;
+    padding-bottom: 20px;
+}
+
+#categoryPage > .separator {
+    border: 1px solid transparent;
+    padding-top: 1.5%;
+    padding-left: 2%;
+    padding-bottom: 1.2%;
+}
+
+#categoryPage > .separator > .image {
+    float: left;
+    padding-right: 5%;
+    padding-top: 10px;
+}
+
+#categoryPage > .separator > .productName {
+    padding-top: 10px;
+}
+
+#categoryPage > .separator > .productName > a {
+    color: black;
+    text-decoration: none;
+    font-size: 30px;
+}
+
+#categoryPage > .separator > .productName > a:hover {
+    text-decoration: none;
+    color: #FF9900;
+    cursor: pointer;
+    font-size: 30px;
+}
+
+#categoryPage > .separator > .infoProduct {
+    padding-top: 10px;
+}
+
+#categoryPage > .separator > h2 {
+    font-size: 30px;
+    font-weight: bold;
+    margin-top: 8px;
+    margin-bottom: -3px;
+}

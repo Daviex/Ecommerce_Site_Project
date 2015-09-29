@@ -1,0 +1,75 @@
+#checkoutPage {
+    font-size: 20px;
+    color: #111111;
+}
+
+#checkoutPage > .title {
+    float: left;
+    font-size: 50px;
+    padding-bottom: 20px;
+}
+
+#checkoutPage > .back {
+    float: right;
+    margin-top: 10px;
+}
+
+#checkoutPage > .back > .backButtonStyle {
+    font-size: 20px;
+    padding: 10px;
+    font-weight: bolder;
+    border-radius: 10px;
+}
+
+#checkoutPage > .infoPurchase {
+    display: block;
+}
+
+#checkoutPage > .infoPurchase > .infoInvoice {
+    float: left;
+}
+
+#checkoutPage > .infoPurchase > .infoInvoice > table {
+    border-spacing: 5px;
+    border-collapse: separate;
+    text-align: left;
+}
+
+#checkoutPage > .infoPurchase > .infoExpress {
+    float: left;
+}
+
+#checkoutPage > .summary {
+    float: right;
+
+    border: 2px solid #ff8713;
+    border-radius: 20px;
+    padding: 10px;
+    background-color: #ecd116;
+
+    font-size: 30px;
+
+    margin-right: 8%;
+}
+
+#checkoutPage > .summary > button {
+    border-radius: 20px;
+    font-size: 20px;
+    font-weight: bolder;
+    color: black;
+    padding: 5px 7px 5px 7px;
+    background-color: #FF9900;
+    border: 1px solid #424242;
+    width: 200px;
+}
+
+#checkoutPage >  .summary > button:active {
+    border-radius: 20px;
+    font-size: 20px;
+    font-weight: bolder;
+    color: black;
+    padding: 5px 7px 5px 7px;
+    background-color: #975700;
+    border: 1px solid #424242;
+    width: 200px;
+}

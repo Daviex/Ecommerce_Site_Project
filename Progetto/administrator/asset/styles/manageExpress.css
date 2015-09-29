@@ -1,0 +1,78 @@
+#manageexpressPage {
+    font-size: 20px;
+    color: #111111;
+}
+
+#manageexpressPage > .title {
+    font-size: 50px;
+    padding-bottom: 20px;
+}
+
+#manageexpressPage > .infoExpress {
+    font-size: 25px;
+    padding-bottom: 20px;
+}
+
+#manageexpressPage > .infoExpress > table {
+    font-size: 20px;
+    border: 1px solid black;
+    border-collapse: collapse;
+    border-spacing: 0px;
+}
+
+#manageexpressPage > .infoExpress > table tr {
+    border: 1px solid black;
+}
+
+#manageexpressPage > .infoExpress > table tr:hover {
+    border: 1px solid black;
+    background-color: #fdfdfd;
+    cursor: pointer;
+}
+
+#manageexpressPage > .infoExpress > table td{
+    border: 1px solid black;
+    padding: 5px;
+}
+
+#manageexpressPage > .infoExpress > table tr th{
+    border: 1px solid black;
+    text-align: left;
+    padding: 5px;
+}
+
+#manageexpressPage > .infoExpress > input[type='text'] {
+    width: 400px;
+    font-size: 20px;
+}
+
+#manageexpressPage > .infoExpress > input[type='number'] {
+    width: 200px;
+    font-size: 20px;
+}
+
+#manageexpressPage > .infoExpress > textarea {
+    font-size: 20px;
+}
+
+#manageexpressPage > .infoExpress >  button {
+    border-radius: 20px;
+    font-size: 20px;
+    font-weight: bolder;
+    color: black;
+    padding: 5px 7px 5px 7px;
+    background-color: #FF9900;
+    border: 1px solid #424242;
+    width: 300px;
+}
+
+#manageexpressPage > .infoExpress > form > button:active {
+    border-radius: 20px;
+    font-size: 20px;
+    font-weight: bolder;
+    color: black;
+    padding: 5px 7px 5px 7px;
+    background-color: #975700;
+    border: 1px solid #424242;
+    width: 300px;
+}

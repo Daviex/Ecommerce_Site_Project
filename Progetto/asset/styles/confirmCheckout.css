@@ -1,0 +1,9 @@
+#confirmcheckoutPage {
+    font-size: 20px;
+    color: #111111;
+}
+
+#confirmcheckoutPage > .title {
+    font-size: 50px;
+    padding-bottom: 20px;
+}

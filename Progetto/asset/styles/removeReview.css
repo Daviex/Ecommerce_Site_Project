@@ -1,0 +1,38 @@
+/* START REMOVE REVIEW */
+#removereviewPage {
+    font-size: 20px;
+    color: #111111;
+}
+
+#removereviewPage > .title {
+    font-size: 50px;
+    padding-bottom: 20px;
+}
+
+#removereviewPage > .message {
+    font-size: 20px;
+    padding-bottom: 20px;
+}
+
+#removereviewPage > .button > button {
+    border-radius: 20px;
+    font-size: 20px;
+    font-weight: bolder;
+    color: black;
+    padding: 5px 7px 5px 7px;
+    background-color: #FF9900;
+    border: 1px solid #424242;
+    width: 300px;
+}
+
+#removereviewPage > .button > button:active {
+    border-radius: 20px;
+    font-size: 20px;
+    font-weight: bolder;
+    color: black;
+    padding: 5px 7px 5px 7px;
+    background-color: #975700;
+    border: 1px solid #424242;
+    width: 300px;
+}
+/* END REMOVE REVIEW */

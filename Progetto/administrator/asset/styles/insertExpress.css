@@ -1,0 +1,46 @@
+#insertexpressPage {
+    font-size: 20px;
+    color: #111111;
+}
+
+#insertexpressPage > .title {
+    font-size: 50px;
+    padding-bottom: 20px;
+}
+
+#insertexpressPage > .infoExpress {
+    font-size: 25px;
+    padding-bottom: 20px;
+}
+
+#insertexpressPage > .infoExpress > input[type='text'] {
+    width: 200px;
+    font-size: 20px;
+}
+
+#insertproductPage > .infoExpress > input[type='number'] {
+    width: 200px;
+    font-size: 20px;
+}
+
+#insertexpressPage > .infoExpress > button {
+    border-radius: 20px;
+    font-size: 20px;
+    font-weight: bolder;
+    color: black;
+    padding: 5px 7px 5px 7px;
+    background-color: #FF9900;
+    border: 1px solid #424242;
+    width: 300px;
+}
+
+#insertexpressPage > .infoExpress > button:active {
+    border-radius: 20px;
+    font-size: 20px;
+    font-weight: bolder;
+    color: black;
+    padding: 5px 7px 5px 7px;
+    background-color: #975700;
+    border: 1px solid #424242;
+    width: 300px;
+}

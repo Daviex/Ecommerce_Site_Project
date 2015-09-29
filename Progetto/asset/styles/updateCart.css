@@ -1,0 +1,9 @@
+#updatecartPage {
+    font-size: 20px;
+    color: #111111;
+}
+
+#updatecartPage > .title {
+    font-size: 50px;
+    padding-bottom: 20px;
+}

@@ -1,0 +1,57 @@
+#sectionsPage {
+
+}
+
+#sectionsPage > .title {
+    float: left;
+    font-size: 50px;
+    padding-bottom: 5px;
+}
+
+#sectionsPage > .description {
+    float: left;
+    font-size: 25px;
+    font-weight: normal;
+    padding-bottom: 20px;
+}
+
+#sectionsPage > .separator {
+    border: 1px solid transparent;
+    padding-top: 1.5%;
+    padding-left: 2%;
+    padding-bottom: 1.2%;
+}
+
+#sectionsPage > .separator > .image {
+    float: left;
+    padding-right: 5%;
+    padding-top: 10px;
+}
+
+#sectionsPage > .separator > .categoryName {
+    padding-top: 10px;
+}
+
+#sectionsPage > .separator > .categoryName > a {
+    color: black;
+    text-decoration: none;
+    font-size: 30px;
+}
+
+#sectionsPage > .separator > .categoryName > a:hover {
+    text-decoration: none;
+    color: #FF9900;
+    cursor: pointer;
+    font-size: 30px;
+}
+
+#sectionsPage > .separator > .infoCategory {
+    padding-top: 10px;
+}
+
+#sectionsPage > .separator > h2 {
+    font-size: 30px;
+    font-weight: bold;
+    margin-top: 8px;
+    margin-bottom: -3px;
+}

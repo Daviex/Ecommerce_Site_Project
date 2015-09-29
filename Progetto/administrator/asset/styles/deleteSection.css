@@ -1,0 +1,64 @@
+#deletesectionPage {
+    font-size: 20px;
+    color: #111111;
+}
+
+#deletesectionPage > .title {
+    font-size: 50px;
+    padding-bottom: 20px;
+}
+
+#deletesectionPage > .infoSection {
+    font-size: 25px;
+    padding-bottom: 20px;
+}
+
+#deletesectionPage > .infoSection > table {
+    font-size: 20px;
+    border: 1px solid black;
+    border-collapse: collapse;
+    border-spacing: 0px;
+}
+
+#deletesectionPage > .infoSection > table tr {
+    border: 1px solid black;
+}
+
+#deletesectionPage > .infoSection > table tr:hover {
+    border: 1px solid black;
+    background-color: #fdfdfd;
+    cursor: pointer;
+}
+
+#deletesectionPage > .infoSection > table td{
+    border: 1px solid black;
+    padding: 5px;
+}
+
+#deletesectionPage > .infoSection > table tr th{
+    border: 1px solid black;
+    text-align: left;
+    padding: 5px;
+}
+
+#deletesectionPage > .infoSection > button {
+    border-radius: 20px;
+    font-size: 20px;
+    font-weight: bolder;
+    color: black;
+    padding: 5px 7px 5px 7px;
+    background-color: #FF9900;
+    border: 1px solid #424242;
+    width: 200px;
+}
+
+#deletesectionPage > .infoSection > button:active {
+    border-radius: 20px;
+    font-size: 20px;
+    font-weight: bolder;
+    color: black;
+    padding: 5px 7px 5px 7px;
+    background-color: #975700;
+    border: 1px solid #424242;
+    width: 200px;
+}

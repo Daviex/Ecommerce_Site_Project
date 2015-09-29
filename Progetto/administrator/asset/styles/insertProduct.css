@@ -1,0 +1,54 @@
+#insertproductPage {
+    font-size: 20px;
+    color: #111111;
+}
+
+#insertproductPage > .title {
+    font-size: 50px;
+    padding-bottom: 20px;
+}
+
+#insertproductPage > .infoProduct {
+    font-size: 25px;
+    padding-bottom: 20px;
+}
+
+#insertproductPage > .infoProduct > select {
+    font-size: 20px;
+}
+
+#insertproductPage > .infoProduct > form > select {
+    font-size: 20px;
+}
+
+#insertproductPage > .infoProduct > form > input[type='text'] {
+    width: 200px;
+    font-size: 20px;
+}
+
+#insertproductPage > .infoProduct > form > input[type='number'] {
+    width: 200px;
+    font-size: 20px;
+}
+
+#insertproductPage > .infoProduct > form > button {
+    border-radius: 20px;
+    font-size: 20px;
+    font-weight: bolder;
+    color: black;
+    padding: 5px 7px 5px 7px;
+    background-color: #FF9900;
+    border: 1px solid #424242;
+    width: 300px;
+}
+
+#insertproductPage > .infoProduct > form > button:active {
+    border-radius: 20px;
+    font-size: 20px;
+    font-weight: bolder;
+    color: black;
+    padding: 5px 7px 5px 7px;
+    background-color: #975700;
+    border: 1px solid #424242;
+    width: 300px;
+}

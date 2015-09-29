@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component name="dataSourceStorage">
+  <data-source name="MySQL - ecommerce@localhost" uuid="a82ec2ce-5ee4-493b-ac84-7e124935e093">
+    <database-info product="MySQL" version="5.6.24" jdbc-version="4.0" driver-name="MySQL Connector Java" driver-version="mysql-connector-java-5.1.35 ( Revision: 5fb9c5849535c13917c2cf9baaece6ef9693ef27 )">
+      <extra-name-characters>#@</extra-name-characters>
+      <identifier-quote-string>`</identifier-quote-string>
+    </database-info>
+    <case-sensitivity plain-identifiers="lower" quoted-identifiers="lower"/>
+    <schema name="" catalog="ecommerce"/>
+    <table name="acquisti" schema="" catalog="ecommerce" type="TABLE">
+      <column name="ID" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" autoIncrement="true"/>
+      <column name="Data_Acq" sqlType="DATE" precision="10" scale="0" nullable="false" jdbcType="91"/>
+      <column name="Costo_Tot" sqlType="DOUBLE" precision="22" scale="0" nullable="false" jdbcType="8"/>
+      <column name="Quantita" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <column name="IDProd" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <column name="IDUser" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <column name="IDSped" sqlType="INT" precision="10" scale="0" nullable="true" jdbcType="4"/>
+      <column name="IDStato" sqlType="INT" precision="10" scale="0" nullable="true" jdbcType="4"/>
+      <column name="IDRec" sqlType="INT" precision="10" scale="0" nullable="true" jdbcType="4"/>
+      <primary-key name="PRIMARY" columns="ID"/>
+      <foreign-key name="acquisti_ibfk_1" columns="IDProd" ref-table="prodotti" ref-schema="" ref-catalog="ecommerce" ref-columns="ID" update-rule="0" delete-rule="0" deferrability="2"/>
+      <foreign-key name="acquisti_ibfk_2" columns="IDUser" ref-table="utenti" ref-schema="" ref-catalog="ecommerce" ref-columns="ID" update-rule="0" delete-rule="0" deferrability="2"/>
+      <foreign-key name="acquisti_ibfk_3" columns="IDSped" ref-table="spedizioni" ref-schema="" ref-catalog="ecommerce" ref-columns="ID" update-rule="0" delete-rule="2" deferrability="2"/>
+      <foreign-key name="acquisti_ibfk_4" columns="IDStato" ref-table="stati" ref-schema="" ref-catalog="ecommerce" ref-columns="ID" update-rule="0" delete-rule="2" deferrability="2"/>
+      <foreign-key name="acquisti_ibfk_5" columns="IDRec" ref-table="recensioni" ref-schema="" ref-catalog="ecommerce" ref-columns="ID" update-rule="0" delete-rule="2" deferrability="2"/>
+      <index name="acquisti_ibfk_3" unique="false" columns="IDSped"/>
+    </table>
+    <table name="categorie" schema="" catalog="ecommerce" type="TABLE">
+      <column name="ID" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" autoIncrement="true"/>
+      <column name="Nome" sqlType="VARCHAR" precision="255" scale="0" nullable="false" jdbcType="12"/>
+      <column name="Desc" sqlType="TEXT" precision="16383" scale="0" nullable="false" jdbcType="-1"/>
+      <column name="IDRep" sqlType="INT" precision="10" scale="0" nullable="true" jdbcType="4"/>
+      <primary-key name="PRIMARY" columns="ID"/>
+      <foreign-key name="categorie_ibfk_1" columns="IDRep" ref-table="reparti" ref-schema="" ref-catalog="ecommerce" ref-columns="ID" update-rule="0" delete-rule="2" deferrability="2"/>
+      <exported-key name="prodotti_ibfk_1" table="prodotti" schema="" catalog="ecommerce" columns="IDCat"/>
+      <index name="categorie_ibfk_1" unique="false" columns="IDRep"/>
+    </table>
+    <table name="corrieri" schema="" catalog="ecommerce" type="TABLE">
+      <column name="ID" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" autoIncrement="true"/>
+      <column name="Nominativo" sqlType="VARCHAR" precision="40" scale="0" nullable="false" jdbcType="12"/>
+      <column name="Costo" sqlType="DOUBLE" precision="22" scale="0" nullable="false" jdbcType="8"/>
+      <primary-key name="PRIMARY" columns="ID"/>
+      <exported-key name="spedizioni_ibfk_1" table="spedizioni" schema="" catalog="ecommerce" columns="IDCorr"/>
+    </table>
+    <table name="prodotti" schema="" catalog="ecommerce" type="TABLE">
+      <column name="ID" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" autoIncrement="true"/>
+      <column name="Nome" sqlType="VARCHAR" precision="255" scale="0" nullable="false" jdbcType="12"/>
+      <column name="Desc" sqlType="TEXT" precision="16383" scale="0" nullable="false" jdbcType="-1"/>
+      <column name="Prezzo" sqlType="DOUBLE" precision="255" scale="0" nullable="true" jdbcType="8"/>
+      <column name="Quantita" sqlType="VARCHAR" precision="255" scale="0" nullable="true" jdbcType="12"/>
+      <column name="IMG" sqlType="VARCHAR" precision="255" scale="0" nullable="true" jdbcType="12"/>
+      <column name="IDCat" sqlType="INT" precision="10" scale="0" nullable="true" jdbcType="4"/>
+      <primary-key name="PRIMARY" columns="ID"/>
+      <foreign-key name="prodotti_ibfk_1" columns="IDCat" ref-table="categorie" ref-schema="" ref-catalog="ecommerce" ref-columns="ID" update-rule="0" delete-rule="2" deferrability="2"/>
+      <exported-key name="acquisti_ibfk_1" table="acquisti" schema="" catalog="ecommerce" columns="IDProd"/>
+      <index name="ID" unique="false" columns="ID"/>
+      <index name="prodotti_ibfk_1" unique="false" columns="IDCat"/>
+    </table>
+    <table name="recensioni" schema="" catalog="ecommerce" type="TABLE">
+      <column name="ID" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" autoIncrement="true"/>
+      <column name="Titolo" sqlType="TEXT" precision="65535" scale="0" nullable="true" jdbcType="-1"/>
+      <column name="Testo" sqlType="LONGTEXT" precision="2147483647" scale="0" nullable="false" jdbcType="-1"/>
+      <column name="Voto" sqlType="INT" precision="10" scale="0" nullable="true" jdbcType="4"/>
+      <primary-key name="PRIMARY" columns="ID"/>
+      <exported-key name="acquisti_ibfk_5" table="acquisti" schema="" catalog="ecommerce" columns="IDRec"/>
+    </table>
+    <table name="reparti" schema="" catalog="ecommerce" type="TABLE">
+      <column name="ID" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" autoIncrement="true"/>
+      <column name="Nome" sqlType="VARCHAR" precision="255" scale="0" nullable="false" jdbcType="12"/>
+      <column name="Desc" sqlType="TEXT" precision="16383" scale="0" nullable="false" jdbcType="-1"/>
+      <primary-key name="PRIMARY" columns="ID"/>
+      <exported-key name="categorie_ibfk_1" table="categorie" schema="" catalog="ecommerce" columns="IDRep"/>
+    </table>
+    <table name="spedizioni" schema="" catalog="ecommerce" type="TABLE">
+      <column name="ID" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" autoIncrement="true"/>
+      <column name="Data_Part" sqlType="DATE" precision="10" scale="0" nullable="true" jdbcType="91"/>
+      <column name="Data_Arr" sqlType="DATE" precision="10" scale="0" nullable="true" jdbcType="91"/>
+      <column name="Luogo_Part" sqlType="VARCHAR" precision="255" scale="0" nullable="false" jdbcType="12"/>
+      <column name="Luogo_Arr" sqlType="VARCHAR" precision="255" scale="0" nullable="false" jdbcType="12"/>
+      <column name="IDCorr" sqlType="INT" precision="10" scale="0" nullable="true" jdbcType="4"/>
+      <primary-key name="PRIMARY" columns="ID"/>
+      <foreign-key name="spedizioni_ibfk_1" columns="IDCorr" ref-table="corrieri" ref-schema="" ref-catalog="ecommerce" ref-columns="ID" update-rule="0" delete-rule="2" deferrability="2"/>
+      <exported-key name="acquisti_ibfk_3" table="acquisti" schema="" catalog="ecommerce" columns="IDSped"/>
+    </table>
+    <table name="stati" schema="" catalog="ecommerce" type="TABLE">
+      <column name="ID" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" autoIncrement="true"/>
+      <column name="Nome" sqlType="VARCHAR" precision="255" scale="0" nullable="true" jdbcType="12"/>
+      <primary-key name="PRIMARY" columns="ID"/>
+      <exported-key name="acquisti_ibfk_4" table="acquisti" schema="" catalog="ecommerce" columns="IDStato"/>
+    </table>
+    <table name="utenti" schema="" catalog="ecommerce" type="TABLE">
+      <column name="ID" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" autoIncrement="true"/>
+      <column name="Nominativo" sqlType="VARCHAR" precision="255" scale="0" nullable="false" jdbcType="12"/>
+      <column name="Citta" sqlType="VARCHAR" precision="255" scale="0" nullable="false" jdbcType="12"/>
+      <column name="Indirizzo" sqlType="VARCHAR" precision="255" scale="0" nullable="false" jdbcType="12"/>
+      <column name="Num_Tel" sqlType="VARCHAR" precision="10" scale="0" nullable="false" jdbcType="12"/>
+      <column name="Data_Nasc" sqlType="DATE" precision="10" scale="0" nullable="false" jdbcType="91"/>
+      <column name="Cod_Fisc" sqlType="VARCHAR" precision="16" scale="0" nullable="true" jdbcType="12"/>
+      <column name="Username" sqlType="VARCHAR" precision="255" scale="0" nullable="true" jdbcType="12"/>
+      <column name="Password" sqlType="VARCHAR" precision="255" scale="0" nullable="true" jdbcType="12"/>
+      <column name="Email" sqlType="VARCHAR" precision="255" scale="0" nullable="true" jdbcType="12"/>
+      <column name="Rank" sqlType="INT" precision="10" scale="0" nullable="true" jdbcType="4"/>
+      <primary-key name="PRIMARY" columns="ID"/>
+      <exported-key name="acquisti_ibfk_2" table="acquisti" schema="" catalog="ecommerce" columns="IDUser"/>
+    </table>
+  </data-source>
+</component>

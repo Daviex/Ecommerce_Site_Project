@@ -1,0 +1,169 @@
+#productPage {
+    font-size: 25px;
+}
+
+#productPage > .image {
+    float: left;
+    margin-left: -20px;
+    padding-right: 30px;
+ }
+
+#productPage > img {
+    float: left;
+    margin-left: -20px;
+    padding-right: 30px;
+    max-width: 40%;
+    max-height: 40%;
+}
+
+#productPage > .productName {
+    font-size: 40px;
+    padding-top: 20px;
+}
+
+#productPage > .infoBought {
+}
+
+#productPage > .infoBought > .productQuant {
+    float: left;
+}
+
+#productPage > .infoBought > .productQuant > p {
+    float: left;
+    margin: 0;
+}
+
+#productPage > .infoBought > .productQuant > input {
+    margin: 5px;
+}
+
+#productPage > .infoBought > .productPrice {
+    padding-left: 75%;
+}
+
+#productPage >.productBuy {
+    float: left;
+}
+
+#productPage > .productBuy > button {
+    border-radius: 20px;
+    font-size: 20px;
+    font-weight: bolder;
+    color: black;
+    padding: 5px 7px 5px 7px;
+    background-color: #FF9900;
+    border: 1px solid #424242;
+}
+
+#productPage > .productBuy > button:active {
+    border-radius: 20px;
+    font-size: 20px;
+    font-weight: bolder;
+    color: black;
+    padding: 5px 7px 5px 7px;
+    background-color: #975700;
+    border: 1px solid #424242;
+}
+
+#productPage > .description {
+    float: left;
+}
+
+#productPage > .description > .title {
+    font-size: 50px;
+
+}
+
+#productPage > .description > .productDesc {
+    font-size: 20px;
+    font-weight: normal;
+}
+
+#productPage > .reviews {
+    float: left;
+    padding-top: 40px;
+}
+
+#productPage > .reviews > .title {
+     font-size: 50px;
+}
+
+#productPage > .reviews > .averageofVotes {
+    font-size: 20px;
+    font-weight: bolder;
+    padding-bottom: 8px;
+}
+
+#productPage > .reviews > .votesClass {
+    font-weight: normal;
+    font-size: 18px;
+}
+
+#productPage > .reviews > .userReviews > .subReviews {
+    border: 1px solid black;
+    border-radius: 15px;
+    background-color: #BEBEBE;
+    padding: 15px;
+    margin-bottom: 10px;
+}
+#productPage > .reviews > .userReviews > .subReviews.emphatized {
+    border: 1px solid black;
+    border-radius: 15px;
+    background-color: rgba(255, 221, 0, 100);
+    padding: 15px;
+    margin-bottom: 10px;
+    min-width: 900px;
+ }
+
+#productPage > .reviews > .userReviews > .subReviews > .reviewTitle {
+    font-size: 20px;
+    margin-bottom: -20px;
+}
+
+#productPage > .reviews > .userReviews > .subReviews > .reviewTitle > .title {
+    font-weight: bolder;
+}
+#productPage > .reviews > .userReviews > .subReviews > .reviewTitle > .user {
+    font-weight: normal;
+}
+#productPage > .reviews > .userReviews > .subReviews > .reviewTitle > .data {
+    font-weight: normal;
+}
+#productPage > .reviews > .userReviews > .subReviews > .reviewTitle > .vote {
+    float: right;
+    padding-right: 3%;
+}
+#productPage > .reviews > .userReviews > .subReviews > .reviewTitle > .remove {
+    float: right;
+    border: 1px dotted black;
+    border-radius: 5px;
+    background-color: aliceblue;
+    cursor: pointer;
+}
+#productPage > .reviews > .userReviews > .subReviews > .reviewTitle > .space {
+}
+
+#productPage > .reviews > .userReviews > .subReviews > .reviewSection {
+    font-size: 18px;
+    font-weight: normal;
+}
+
+#productPage > .reviews > .newReview > button {
+    border-radius: 20px;
+    font-size: 20px;
+    font-weight: bolder;
+    color: black;
+    padding: 5px 7px 5px 7px;
+    background-color: #FF9900;
+    border: 1px solid #424242;
+}
+
+#productPage > .reviews > .newReview > button:active {
+    border-radius: 20px;
+    font-size: 20px;
+    font-weight: bolder;
+    color: black;
+    padding: 5px 7px 5px 7px;
+    background-color: #975700;
+    border: 1px solid #424242;
+}
